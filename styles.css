@@ -1,0 +1,42 @@
+@keyframes float {
+	0% {
+		text-shadow: 2px 10px 10px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+		transform: translatey(10px);
+	}
+	100% {
+		text-shadow: 2px 10px 10px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Sixtyfour Convergence", serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+div {
+    margin: 100px;
+}
+
+.float {
+    text-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 10s ease-in-out infinite;
+  }
+
+

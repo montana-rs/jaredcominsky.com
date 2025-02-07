@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()"  >
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,9 +10,19 @@
     <title>jaredcominsky.com</title>
 </head>
 <body>
-    <div>
-        <h1 class="float">Jared Cominsky</h1>
+    <div id="name">
+        <h1 class="float" id="jc">Jared Cominsky</h1>
     </div>
-    
+    <div id="jumpyjared">
+        <div id="game">
+            <div id="text"><p>Jumpy Jared</p></div>
+            <div id="character"></div>
+            <div id="block"></div>
+        </div>
+        <div id="reset">
+            <button id="resetbutt" onClick="window.location.reload();">reset</button>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
